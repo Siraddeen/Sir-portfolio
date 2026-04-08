@@ -1,84 +1,113 @@
-# R. Siraddeen — Portfolio
+# 🚀 Siraddeen | Developer Portfolio
 
-Personal portfolio built with **React + Vite + Tailwind CSS**.
+## 🔗 Live Demo
 
-## Getting Started
+👉 https://siraddeen-portfolio.netlify.app/
 
-```bash
-npm install
-npm run dev
-```
+---
 
-Then open http://localhost:5173
+## 📌 About This Project
 
-## Build for Production
+This is my personal developer portfolio built using **Next.js, React, and SCSS**, designed to showcase my skills, projects, and problem-solving ability as a developer.
 
-```bash
-npm run build
-```
+The goal of this portfolio is not just design, but to demonstrate:
 
-Output goes to the `dist/` folder — deploy that folder to Netlify, Vercel, or GitHub Pages.
+* Real-world project experience
+* Clean and scalable frontend architecture
+* Ability to build and deploy production-ready applications
 
-## Deploy to GitHub Pages
+---
 
-1. Push this project to a GitHub repo (e.g. `siraddeen.github.io`)
-2. Run `npm run build`
-3. Push the `dist/` folder contents to the `gh-pages` branch
-   Or use the `gh-pages` npm package:
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-   Add to package.json scripts:
-   ```json
-   "deploy": "gh-pages -d dist"
-   ```
-   Then run `npm run build && npm run deploy`
+## 🛠 Tech Stack
 
-## Project Structure
+* **Frontend:** React.js, Next.js
+* **Styling:** SCSS (Sass)
+* **Deployment:** Vercel
+* **Version Control:** Git & GitHub
 
-```
-portfolio/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx        ← Navigation bar
-│   │   ├── Cursor.jsx        ← Custom cursor
-│   │   ├── Hero.jsx          ← Hero section
-│   │   ├── About.jsx         ← About + stats
-│   │   ├── Skills.jsx        ← Skills cards
-│   │   ├── Experience.jsx    ← Work timeline
-│   │   ├── Projects.jsx      ← Project cards
-│   │   ├── Education.jsx     ← Education + certs
-│   │   ├── Contact.jsx       ← Contact section
-│   │   ├── Footer.jsx        ← Footer
-│   │   └── useFadeIn.js      ← Scroll animation hook
-│   ├── styles/
-│   │   └── global.css        ← All custom CSS + Tailwind
-│   ├── data.js               ← ⭐ ALL YOUR CONTENT IS HERE
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── tailwind.config.js
-├── vite.config.js
-└── package.json
-```
+---
 
-## How to Add a New Project
+## ✨ Key Features
 
-Open `src/data.js` and add an entry to the `projects` array:
+* ⚡ Fast and optimized performance using Next.js
+* 📱 Fully responsive design (mobile-first approach)
+* 🧩 Component-based architecture
+* 🎯 Clean UI focused on readability and usability
+* 🔗 Integrated project showcase with links
+* 📬 Contact section for easy communication
 
-```js
-{
-  num: "PROJECT 03",
-  title: "Your Project Name",
-  desc: "Short description of what it does.",
-  stack: ["React", "Node.js", "MongoDB"],
-  liveUrl: "https://your-live-url.com",
-  githubUrl: "https://github.com/Siraddeen/your-repo",
-},
-```
+---
 
-That's it — the Projects section will automatically show the new card.
+## 📂 Featured Projects
 
-## How to Update Personal Info
 
-Edit the `personal` object at the top of `src/data.js`.
+### 🔹 Mini Social Media Application
+
+* Developed a mini social media platform with media upload support
+* Integrated Cloudinary for image/video storage
+* Demonstrates understanding of APIs, media handling, and backend interaction
+
+👉 GitHub: https://github.com/your-social-app
+
+---
+
+### 🔹 CSV Data Cleaner (Python)
+
+* Built a Python-based tool to clean and process CSV datasets
+* Handles missing values, formatting issues, and data normalization
+* Demonstrates data processing and problem-solving skills
+
+👉 GitHub: https://github.com/your-csv-project
+
+
+
+
+
+---
+
+### 🔹 JavaScript Projects (JP Morgan Simulation)
+
+* Completed real-world JavaScript tasks simulating financial data scenarios
+* Focused on data visualization and frontend logic
+
+---
+
+## 🧠 What This Portfolio Demonstrates
+
+* Ability to build **modern web applications using React & Next.js**
+* Strong understanding of **component-based architecture**
+* Experience with **real-world projects (data + frontend + backend concepts)**
+* Knowledge of **API integration and media handling**
+* Clean code practices and project structuring
+
+---
+
+
+
+---
+
+## 📸 Screenshots
+
+<img width="1919" height="1000" alt="Screenshot 2026-04-08 214119" src="https://github.com/user-attachments/assets/9207b60d-4533-47d3-8271-b99cbc8ff5d3" />
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Netlify** for fast and reliable hosting.
+
+---
+
+## 📬 Contact Me
+
+* 📧 Email: [siraddeen15@gmail.com](mailto:your-email@example.com)
+* 💼 LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/siraddeen/)
+* 🧑‍💻 GitHub: https://github.com/Siraddeen
+
+---
+
+## ⚡ Final Note
+
+This portfolio reflects my journey as a developer transitioning into the IT industry, focusing on building practical, real-world projects and continuously improving my skills.
+
+I am actively looking for opportunities where I can contribute, learn, and grow as a developer.
