@@ -2,24 +2,35 @@ import { experience } from "../data";
 
 export default function Experience() {
   return (
-    <section className="section-base" id="experience">
-      <div className="section-label">03 — Experience</div>
-      <h2 className="section-title fade-in">Work History</h2>
+    <section
+      className="px-[clamp(1.5rem,8vw,8rem)] py-[clamp(4rem,10vw,8rem)]"
+      id="experience"
+    >
+      <div className="font-mono text-xs text-cyan tracking-[0.2em] uppercase mb-2 flex items-center gap-3">
+        <div className="w-[30px] h-px bg-cyan"></div>
+        03 — Experience
+      </div>
+      <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-extrabold tracking-[-0.02em] leading-[1.1] mb-12 fade-in">
+        Work History
+      </h2>
 
-      <div className="exp-timeline">
+      <div className="flex flex-col gap-8">
         {experience.map((e, i) => (
-          <div key={i} className={`exp-item fade-in delay-${i + 1}`}>
-            <div style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "var(--amber)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>
+          <div key={i} className={`fade-in delay-${i + 1}`}>
+            <div className="font-mono text-xs text-amber tracking-[0.1em] uppercase mb-1">
               {e.date}
             </div>
-            <div style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "0.2rem" }}>{e.title}</div>
-            <div style={{ fontSize: "0.85rem", color: "var(--cyan)", marginBottom: "0.8rem", fontFamily: "'Space Mono', monospace" }}>
-              {e.company}
-            </div>
-            <ul style={{ listStyle: "none" }}>
+            <div className="text-xl font-bold mb-1">{e.title}</div>
+            <div className="text-sm text-cyan mb-4 font-mono">{e.company}</div>
+            <ul className="list-none space-y-2">
               {e.bullets.map((b, j) => (
-                <li key={j} style={{ fontSize: "0.9rem", color: "#9ca3af", padding: "0.3rem 0", paddingLeft: "1rem", position: "relative", lineHeight: 1.6 }}>
-                  <span style={{ position: "absolute", left: 0, color: "var(--cyan)", fontSize: "0.7rem", top: "0.35rem" }}>▸</span>
+                <li
+                  key={j}
+                  className="text-sm text-gray-400 py-1 pl-4 relative leading-relaxed"
+                >
+                  <span className="absolute left-0 text-cyan text-xs top-1">
+                    ▸
+                  </span>
                   {b}
                 </li>
               ))}

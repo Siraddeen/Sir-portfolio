@@ -1,44 +1,73 @@
 import { personal } from "../data";
 
 const links = [
-  { icon: "✉️", label: "Email", value: "siraddeen15@gmail.com", href: `mailto:${personal.email}` },
-  { icon: "⌥",  label: "GitHub", value: "github.com/Siraddeen", href: personal.github },
-  { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/siraddeen", href: personal.linkedin },
+  {
+    icon: "✉️",
+    label: "Email",
+    value: "siraddeen15@gmail.com",
+    href: `mailto:${personal.email}`,
+  },
+  {
+    icon: "⌥",
+    label: "GitHub",
+    value: "github.com/Siraddeen",
+    href: personal.github,
+  },
+  {
+    icon: "💼",
+    label: "LinkedIn",
+    value: "linkedin.com/in/siraddeen",
+    href: personal.linkedin,
+  },
 ];
 
 export default function Contact() {
   return (
-    <section className="section-base" id="contact" style={{ background: "var(--bg2)" }}>
-      <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
-        <div className="section-label" style={{ justifyContent: "center", marginBottom: "1rem" }}>
+    <section
+      className="px-[clamp(1.5rem,8vw,8rem)] py-[clamp(4rem,10vw,8rem)] bg-bg2"
+      id="contact"
+    >
+      <div className="max-w-2xl mx-auto text-center">
+        <div className="font-mono text-xs text-cyan tracking-[0.2em] uppercase mb-4 flex items-center justify-center gap-3">
+          <div className="w-[30px] h-px bg-cyan"></div>
           06 — Contact
         </div>
 
-        <h2 className="fade-in" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 800, letterSpacing: "-0.02em", marginBottom: "1rem" }}>
-          Let's Build<br />
-          <span style={{ color: "var(--cyan)" }}>Something.</span>
+        <h2 className="fade-in text-[clamp(2rem,5vw,3.5rem)] font-extrabold tracking-[-0.02em] leading-[1.1] mb-4">
+          Let's Build
+          <br />
+          <span className="text-cyan">Something.</span>
         </h2>
 
-        <p className="fade-in delay-1" style={{ fontSize: "1.05rem", color: "#6b7280", marginBottom: "3rem", lineHeight: 1.7 }}>
-          Open to full-time roles, remote opportunities, and internships with PPO.
-          Immediate joiner. No notice period.
+        <p className="fade-in delay-1 text-lg text-muted mb-12 leading-relaxed">
+          Open to full-time roles, remote opportunities, and internships with
+          PPO. Immediate joiner. No notice period.
         </p>
 
-        <div className="fade-in delay-2" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1rem", marginBottom: "3rem" }}>
+        <div className="fade-in delay-2 flex flex-wrap justify-center gap-4 mb-12">
           {links.map((l, i) => (
-            <a key={i} href={l.href} target={l.href.startsWith("mailto") ? "_self" : "_blank"} rel="noreferrer" className="contact-card">
-              <div style={{ fontSize: "1.3rem" }}>{l.icon}</div>
+            <a
+              key={i}
+              href={l.href}
+              target={l.href.startsWith("mailto") ? "_self" : "_blank"}
+              rel="noreferrer"
+              className="bg-card border border-border rounded-lg p-4 flex items-center gap-3 hover:border-cyan transition-colors"
+            >
+              <div className="text-xl">{l.icon}</div>
               <div>
-                <div style={{ fontSize: "0.7rem", color: "var(--muted)", fontFamily: "'Space Mono', monospace", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                <div className="font-mono text-xs text-muted uppercase tracking-[0.1em]">
                   {l.label}
                 </div>
-                <div style={{ fontSize: "0.9rem", color: "var(--text)", fontWeight: 600 }}>{l.value}</div>
+                <div className="text-sm text-text font-semibold">{l.value}</div>
               </div>
             </a>
           ))}
         </div>
 
-        <a href={`mailto:${personal.email}`} className="btn-primary" style={{ fontSize: "0.9rem", padding: "1rem 2.5rem" }}>
+        <a
+          href={`mailto:${personal.email}`}
+          className="bg-cyan text-bg font-bold text-sm px-6 py-3 rounded hover:bg-cyan2 transition-colors inline-block"
+        >
           Say Hello →
         </a>
       </div>

@@ -10,7 +10,6 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import useFadeIn from "./components/useFadeIn";
-import "./styles/global.css";
 
 export default function App() {
   useFadeIn();

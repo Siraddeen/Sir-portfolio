@@ -15,9 +15,9 @@ export const personal = {
 
 export const stats = [
   { num: "2+", label: "Live Projects" },
-  { num: "3",  label: "Certifications" },
+  { num: "3", label: "Certifications" },
   { num: "MERN", label: "Core Stack" },
-  { num: "0",  label: "Notice Period" },
+  { num: "0", label: "Notice Period" },
 ];
 
 export const skills = [
@@ -25,13 +25,27 @@ export const skills = [
     icon: "⚛️",
     name: "Frontend",
     desc: "Building responsive, accessible UIs with modern React patterns and TypeScript.",
-    tags: ["React.js", "TypeScript", "JavaScript ES6+", "HTML5 / CSS3", "Context API", "Hooks"],
+    tags: [
+      "React.js",
+      "TypeScript",
+      "JavaScript ES6+",
+      "HTML5 / CSS3",
+      "Context API",
+      "Hooks",
+    ],
   },
   {
     icon: "🔧",
     name: "Backend",
     desc: "Designing and building RESTful APIs with authentication, validation, and MVC structure.",
-    tags: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "MVC", "Middleware"],
+    tags: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Auth",
+      "MVC",
+      "Middleware",
+    ],
   },
   {
     icon: "🗄️",
@@ -96,17 +110,32 @@ export const projects = [
     num: "PROJECT 01",
     title: "Mini Social Media Platform",
     desc: "Production-ready full-stack social platform with JWT authentication, role-based access control, media uploads, REST APIs, pagination, and error handling. Built end-to-end and deployed live.",
-    stack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Cloudinary", "JWT", "Docker"],
+    stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Cloudinary",
+      "JWT",
+      "Docker",
+    ],
     liveUrl: "https://siraddeen-mini-media.onrender.com/",
-    githubUrl: "https://github.com/Siraddeen",
+    githubUrl: "https://github.com/Siraddeen/Siraddeen-mini-Media",
   },
   {
     num: "PROJECT 02",
     title: "Python CSV Data Cleaner & Processor",
     desc: "Python utility to clean, validate, normalize, and transform raw CSV datasets. Handles missing values, duplicates, and formatting inconsistencies with modular, reusable functions. Live on Render.",
-    stack: ["Python", "Data Validation", "Automation", "CSV Processing", "Render"],
+    stack: [
+      "Python",
+      "Data Validation",
+      "Automation",
+      "CSV Processing",
+      "Render",
+    ],
     liveUrl: "https://csv-data-processor.onrender.com/",
-    githubUrl: "https://github.com/Siraddeen",
+    githubUrl: "https://github.com/Siraddeen/csv-data-processor",
   },
 ];
 
