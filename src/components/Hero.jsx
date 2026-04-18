@@ -14,7 +14,11 @@ export default function Hero() {
         {/* Status tag */}
         <div className="inline-flex items-center gap-2 font-mono text-xs text-cyan border border-border px-3 py-1.5 rounded-full mb-8 tracking-[0.08em] bg-[rgba(0,229,204,0.05)]">
           <div className="w-1.5 h-1.5 bg-cyan rounded-full animate-pulse" />
-          Available for work · Immediate joiner
+          Available for work · Immediate joiner{" "}
+          <br>
+            I don’t just build products — I pitch, sell, and deliver them
+            end-to-end
+          </br>
         </div>
 
         {/* Name */}
