@@ -18,7 +18,7 @@ export default function Hero() {
 
           <span className="flex flex-col">
             <span>Available for work · Immediate joiner</span>
-            <span>
+            <span className="text-[10px] opacity-80">
               I don’t just build products — I pitch, sell, and deliver them
               end-to-end
             </span>
