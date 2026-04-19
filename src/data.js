@@ -148,7 +148,7 @@ export const projects = [
   {
     num: "PROJECT 03",
     title: "Remote Job Analytics Dashboard",
-    desc: "Interactive dashboard analyzing global remote job trends, salary distributions, and skill demand.",
+    desc: "Built & deployed a full-stack analytics dashboard processing real job data, reducing data inconsistencies and visualizing trends across 30+ days.",
     image: "/images/jobs.png",
     insights: [
       "React & Node jobs dominate remote roles",
