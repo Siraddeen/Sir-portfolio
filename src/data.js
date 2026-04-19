@@ -109,7 +109,13 @@ export const projects = [
   {
     num: "PROJECT 01",
     title: "Mini Social Media Platform",
-    desc: "Production-ready full-stack social platform with JWT authentication, role-based access control, media uploads, REST APIs, pagination, and error handling. Built end-to-end and deployed live.",
+    desc: "Production-ready full-stack social platform with JWT authentication, role-based access control, media uploads, REST APIs, pagination, and error handling.",
+    image: "/images/social.png",
+    insights: [
+      "Implemented JWT-based secure auth system",
+      "Handled media uploads via Cloudinary",
+      "Built scalable REST APIs with pagination",
+    ],
     stack: [
       "React",
       "TypeScript",
@@ -120,24 +126,88 @@ export const projects = [
       "JWT",
       "Docker",
     ],
-    liveUrl: "https://siraddeen-mini-media.onrender.com/",
-    githubUrl: "https://github.com/Siraddeen/Siraddeen-mini-Media",
+    liveUrl: "https://siraddeen-mini-media-v2.onrender.com/",
+    githubUrl: "https://github.com/Siraddeen/mini-media-v2",
   },
+
   {
     num: "PROJECT 02",
-    title: "Python CSV Data Cleaner & Processor",
-    desc: "Python utility to clean, validate, normalize, and transform raw CSV datasets. Handles missing values, duplicates, and formatting inconsistencies with modular, reusable functions. Live on Render.",
-    stack: [
-      "Python",
-      "Data Validation",
-      "Automation",
-      "CSV Processing",
-      "Render",
+    title: "Banking Customer Intelligence Pipeline",
+    desc: "End-to-end data pipeline to clean, transform, and analyze banking customer data for fraud detection and segmentation.",
+    image: "/images/banking.png",
+    insights: [
+      "Detected high-risk anomalies in customer transactions",
+      "Reduced missing data by 35%",
+      "Applied Pareto analysis for revenue insights",
     ],
-    liveUrl: "https://csv-data-processor.onrender.com/",
-    githubUrl: "https://github.com/Siraddeen/csv-data-processor",
+    stack: ["Python", "Pandas", "ETL", "Data Cleaning", "SQL"],
+    liveUrl: "https://github.com/Siraddeen/Banking-Customer-Data-Pipeline",
+    githubUrl: "https://github.com/Siraddeen/Banking-Customer-Data-Pipeline",
+  },
+
+  {
+    num: "PROJECT 03",
+    title: "Remote Job Analytics Dashboard",
+    desc: "Interactive dashboard analyzing global remote job trends, salary distributions, and skill demand.",
+    image: "/images/jobs.png",
+    insights: [
+      "React & Node jobs dominate remote roles",
+      "US salaries are 2x higher than global avg",
+      "Python/data roles growing fastest",
+    ],
+    stack: ["Python", "Power BI", "Data Visualization", "Analytics"],
+    liveUrl: "https://siraddeen-remote-job-analytics.netlify.app/",
+    githubUrl: "https://github.com/Siraddeen/Remote-job-analytic-dashboard",
+  },
+
+  {
+    num: "PROJECT 04",
+    title: "Python CSV Data Cleaner & Processor",
+    desc: "Python utility to clean, validate, normalize CSV datasets and handle missing values & duplicates.",
+    image: "/images/csv.png",
+    insights: [
+      "Automated CSV cleaning pipeline",
+      "Handled duplicates & missing values",
+      "Reusable modular functions",
+    ],
+    stack: ["Python", "Automation", "CSV Processing"],
+    liveUrl: "https://siraddeen-dataclean-csv.onrender.com/",
+    githubUrl: "https://github.com/Siraddeen/csv-data-processor2",
   },
 ];
+// export const projects = [
+//   {
+//     num: "PROJECT 01",
+//     title: "Mini Social Media Platform",
+//     desc: "Production-ready full-stack social platform with JWT authentication, role-based access control, media uploads, REST APIs, pagination, and error handling. Built end-to-end and deployed live.",
+//     stack: [
+//       "React",
+//       "TypeScript",
+//       "Node.js",
+//       "Express",
+//       "MongoDB",
+//       "Cloudinary",
+//       "JWT",
+//       "Docker",
+//     ],
+//     liveUrl: "https://siraddeen-mini-media.onrender.com/",
+//     githubUrl: "https://github.com/Siraddeen/Siraddeen-mini-Media",
+//   },
+//   {
+//     num: "PROJECT 02",
+//     title: "Python CSV Data Cleaner & Processor",
+//     desc: "Python utility to clean, validate, normalize, and transform raw CSV datasets. Handles missing values, duplicates, and formatting inconsistencies with modular, reusable functions. Live on Render.",
+//     stack: [
+//       "Python",
+//       "Data Validation",
+//       "Automation",
+//       "CSV Processing",
+//       "Render",
+//     ],
+//     liveUrl: "https://csv-data-processor.onrender.com/",
+//     githubUrl: "https://github.com/Siraddeen/csv-data-processor",
+//   },
+// ];
 
 export const education = {
   degree: "Mechanical Engineering",
