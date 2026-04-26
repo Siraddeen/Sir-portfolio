@@ -14,7 +14,7 @@ export const personal = {
 };
 
 export const stats = [
-  { num: "2+", label: "Live Projects" },
+  { num: "4+", label: "Live Projects" },
   { num: "3", label: "Certifications" },
   { num: "MERN", label: "Core Stack" },
   { num: "0", label: "Notice Period" },
