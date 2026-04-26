@@ -1,13 +1,20 @@
 import { useState, useEffect } from "react";
-
-// const links = ["about", "skills", "experience", "projects", "contact"];
 const links = [
+  { name: "publication", label: "Publications", highlight: true }, // 👈 NEW
   { name: "about" },
   { name: "skills" },
   { name: "experience" },
   { name: "projects", highlight: true },
   { name: "contact" },
 ];
+// const links = ["about", "skills", "experience", "projects", "contact"];
+// const links = [
+//   { name: "about" },
+//   { name: "skills" },
+//   { name: "experience" },
+//   { name: "projects", highlight: true },
+//   { name: "contact" },
+// ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,7 +54,7 @@ export default function Navbar() {
             {l}
           </a>
         ))} */}
-        {links.map((l) => (
+        {/* {links.map((l) => (
           <a
             key={l.name}
             href={`#${l.name}`}
@@ -55,6 +62,26 @@ export default function Navbar() {
       ${l.highlight ? "text-orange-500 hover:text-orange-400" : "text-muted hover:text-cyan"}`}
           >
             {l.name}
+          </a>
+        ))} */}
+        {links.map((l) => (
+          <a
+            key={l.name}
+            href={
+              l.name === "publication"
+                ? "https://drive.google.com/file/d/1nVZTaZTovdFInaQKWL4PornvSAFieneB/view?usp=sharing" // 👈 replace with your actual path or URL
+                : `#${l.name}`
+            }
+            target={l.name === "publication" ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+            className={`text-xs no-underline tracking-[0.1em] uppercase font-mono transition-colors duration-200 
+      ${
+        l.highlight
+          ? "text-amber hover:text-orange-400"
+          : "text-muted hover:text-cyan"
+      }`}
+          >
+            {l.label || l.name}
           </a>
         ))}
       </div>
